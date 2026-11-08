@@ -1,5 +1,5 @@
 /* Jednoduchý service worker: síť má přednost (bez HTTP cache), když není síť, otevře se uložená kopie. Při změně souborů zvyš verzi. */
-var CACHE = 'crm-2026-11-08b';
+var CACHE = 'crm-2026-11-08c';
 var FILES = ['./', 'index.html', 'manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) {
